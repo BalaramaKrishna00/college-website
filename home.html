@@ -1,0 +1,775 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=0.1">
+       
+       
+            <link rel="stylesheet" href="style.css">
+            <link rel="stylesheet"href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+
+            <title>Welcome To Krishna University</title>
+
+           
+            
+            <style>
+            .top-line {
+            height: 40px;
+            width:100%;
+            border: 1px solid black;
+            background: #4d0019;}
+            .button1{
+                height:38px;
+                width:105px;
+                font-size: 18px;
+                background-color: #99ff99;
+                color: #fff;
+                float:right;
+            }
+            
+            .name {
+                height: 150px;
+                width:100%;
+                border: 1px solid black;
+                background:   #970224;}
+            .options {
+                height: 7vh;
+                width: 100%;
+                border: 1px solid black;
+                background:  #1a1a1a;
+                display: flex;
+                }
+            
+            .options ul{
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow:hidden;
+
+            }
+            .options ul li {
+                float:left;
+            }
+            .options ul li a{
+                color:white ;
+                padding: 15px 19px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+                font-size: 15px;
+                
+            }
+            .options ul li a:hover{
+                background-color: white;
+                color: #ff6633;
+            }
+            li.dropdown{
+                display:inline-block;
+                
+              
+            }
+            .dropdown1{
+                display: none;
+                position: absolute;
+                background-color: black;
+                min-width: 120px;
+                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 2) ;
+                z-index: 999;
+             
+            
+            
+            }
+            .dropdown1 a{
+                color:black;
+                display:block;
+
+             
+            }
+            .dropdown1 a:hover{
+                 background-color: black;
+                 text-decoration: underline;
+                
+                 
+                 
+            }
+            .dropdown:hover .dropdown1 {
+                display:block;
+               
+                
+            }
+            *{
+		        margin:0;
+		        padding:0;
+		        box-sizing:border-box;
+		    }
+            .container {
+                height: 70vh;
+                width: 100%;
+                display: flex;
+                align-items: center;
+
+                }
+            .container1 {
+                height: 280PX;
+                width: 360PX;
+                display: flex;
+                align-items: center;
+                margin:536px 0px 0px 81px;
+                background-color: #f5eacd;
+
+                }
+            .container2 {
+                height: 450PX;
+                width: 360PX;
+                display: flex;
+                margin:-390px 0px 0px 486px;
+                background-color: #f5eacd;
+
+            }
+            .container3 {
+                height: 380PX;
+                width: 350PX;
+                display: flex;
+                margin:80px 0px 0px 81px;
+                background-color: #f5eacd;
+
+
+            }
+            .container4 {
+                height: 440PX;
+                width: 370PX;
+                display: flex;
+                margin:-430px 0px 0px 486px;
+                background-color: #f5eacd;
+                
+
+
+            }
+            .container5 {
+                height: 840PX;
+                width: 380PX;
+                display: flex;
+                margin:-920px 0px 0px 891px;
+                background-color: #f5eacd;
+                
+
+
+            }
+            .container6 {
+                height: 400PX;
+                width: 100%;
+                display: flex;
+                margin:140px 0px 0px 0px;
+                background-color:#262626;
+                
+
+
+            }
+            .buttons2{
+                font-size: 20px;
+                height:55px;
+                width:360px;
+                color:red;
+                background-color:none;
+                margin:10px 0px 0px 10px;
+                border-radius:95px;
+                text-align: left;
+                padding:15px;
+            }
+            .buttons a:hover{
+                text-decoration: none;
+                color:green;
+            }
+            .buttons a{
+                text-decoration: none;
+                
+            }
+            
+
+            .swiper{
+                width: 100%;
+                height: fit-content;
+            }
+            .swiper-slide-img{
+                width:100%;
+            }
+            .swiper .swiper-button-prev,.swiper .swiper-button-next{
+                color: #fff;
+
+            }
+            .swiper .swiper-pagination-bullet-active{
+		        background:#fff;
+		    }
+            .logo1{
+                font-size:14px;
+                color:white;
+                width:220px;
+                position:relative;
+                top:127px;
+                left:89px;
+            }
+            .flag1{
+                font-size:14px;
+                color:white;
+                width:220px;
+                position:relative;
+                top: 114px;
+                left:1109px;
+            }
+            .updates1{
+                height:30px;
+                width:100%;
+                background-color: #d9d9d9;
+                font-size: 17px;
+               
+            }
+            .chief{
+                font-size: 21px;
+                color:white;
+                background-color: #D40E52;
+                padding:10px;
+                text-align: center;
+
+
+            }
+            .box1{
+                height:290px;
+                width:260px;
+                background-color: #f5eacd;
+                position:absolute;
+                top: 750px;
+                left:71px;
+
+            }
+            
+
+
+
+            .box2{
+                height:290px;
+                width:260px;
+                background-color: #f5eacd;
+                position:absolute;
+                top: 750px;
+                left:381px;
+
+            }
+           
+
+
+         
+            .box3{
+                height:290px;
+                width:260px;
+                background-color: #f5eacd;
+                Position:absolute;
+                top: 750px;
+                left:691px;
+
+
+            }
+            .updates2{
+                height:290px;
+                width:260px;
+                background-color: #d9d9d9;
+                Position:absolute;
+                top: 750px;
+                left:1001px;
+
+
+            }
+            .chief2{
+                font-size: 21px;
+                color:white;
+                background-color: #970224;
+                padding:10px;
+                text-align: center;
+            }
+            .chief3{
+                font-size: 21px;
+                color:white;
+                background-color: #970224;
+                padding:10px;
+                text-align: center;
+            }
+            .upcoming{
+                height:580px;
+                width:380px;
+                background-color: #f5eacd;
+                Position:absolute;
+                top: 1100px;
+                left:71px;
+
+
+            }
+            .events{
+                height:550px;
+                width:400px;
+                background-color: #f5eacd;
+                Position:absolute;
+                top: 1100px;
+                left:421px;
+
+
+            }
+            .links{
+                height:1050px;
+                width:400px;
+                background-color: #f5eacd;
+                Position:absolute;
+                top: 1100px;
+                left:871px;
+
+
+            }
+            .buttons1{
+                height:1040px;
+                width:100%;
+
+            }
+            .crop1{
+                height:170px; 
+                width:230px;
+                margin: 8px 0px 0px 12px;
+            }
+            .names{
+                font-size: 20px;
+                
+                color:#1a75ff;
+                text-align: center;
+                margin:10px 0px 0px 0px;
+            }
+            .upcontent1{
+                height:10px;
+                width:20px;
+
+            }
+            .map1{
+                width: 700px;
+                height:300px;
+                background-color: #d9d9d9;
+                position:relative;
+                top:29px;
+                left:200px;
+
+            }
+            .twitter{
+                height: 400px;
+                width:100%;
+            }
+            .twitter1{
+                height:340px;
+                width:335px;
+                background-color:#80d4ff;
+                position: relative;
+                top:23px;
+                left:13px;
+                border-radius: 10%;
+                text-align: center;
+                overflow: auto;
+               
+            }
+            .twitterbox{
+                height: 310px;
+                width:305px;    
+                position: relative;
+                top:3px;
+                left:12px;
+                border-radius: 10%;
+              
+
+            }
+            .add{
+                color:white;    
+            }
+            .det{
+                font-size:19px;
+                color:white;
+
+            }
+            </style>
+
+
+
+
+</head>
+<body>
+
+    <div class="top-line">
+        <a href="C:\xampp\htdocs\project\pro.php">
+        <button type="button" class="button1">Login</button>
+        </a>
+        <p></p>
+
+
+    </div>
+
+
+    <div class="name">
+        <img src="https://upload.wikimedia.org/wikipedia/en/1/10/Krishna_University_logo.png" alt="No logo" style="height:120px; width: 131px; position:relative; top:17px; left:110px;">
+        <div  class="logo1">
+            KRU FOR NATION BUILDING
+        </div>
+        <div  class="flag1">
+            NAAC ACCREDITED
+        </div>
+        <p style="font-size: 36px; color: #f2f2f2; position: absolute; top:150px; left: 450px;text-shadow: 2PX 0PX;"> KRISHNA UNIVERSTY</p>
+        <p style="font-size: 36px; color: #f2f2f2; position: absolute; top:96px; left: 450px;text-shadow: 2PX 0PX;">  कृष्णा  विश्वविद्यालय</p>
+        <p style="font-size: 35px; color: #f2f2f2; position: absolute; top:41px; left: 450px;text-shadow: 2PX 0PX;"> కృష్ణా విశ్వవిద్యాలయం</p>
+        <img src="https://www.mapsofindia.com/maps/india/india-flag-1024x600.jpg" style="height:100px; width:140px; position:relative;left:1100px; top:-127px;"></style>
+
+    </div>
+    
+    <div class="options">
+
+        <ul>
+        <li><a href="https://www.w3schools.com/">HOME</a>
+            
+        </li>
+        <li class="dropdown"><a href="#">ABOUT US </a>
+            <div class="dropdown1">
+                <a href="#">INTRODUCTION</a>
+                <a href="#">VISION & MISSION</a>
+                <a href="#">UNIVERSITY AREA</a>
+                <a href="#">UNIVERSITY ACT</a>
+                                
+            </div>
+        </li>
+        <li  class="dropdown"><a href="#">ADMINISTRATION</a>
+            <div class="dropdown1">
+                <a href="#">CHANCELOR</a>
+                <a href="#">VICE-CHANCELOR</a>
+                <a href="#">DEAN OF SCHOOLS</a>
+                <a href="#">REGISTAR</a>
+                <a href="#">FINANCE OFFICER</a>
+                <a href="#">CONTROLER OF EXAMINATIONS</a>
+                <a href="#">DEAN OF STUDENT WELFARE</a>
+                <a href="#">DIRECTORS</a>
+                <a href="#">CHIEF SPOKES PERSON</a>
+
+
+            </div>
+        
+        
+        </li>
+        <li class="dropdown"><a href="#">STATUTORY BODIES</a>
+            <div class="dropdown1">
+                <a href="#">COURT</a>
+                <a href="#">EXICUTIVE COUNCIL</a>
+                <a href="#">ACADEMIC COUNCIL</a>
+                <a href="#">FINANCE COMMITEE</a>
+
+            </div>
+        
+        </li>
+        <li class="dropdown"><a href="#">ACADEMIC </a>
+            <div class="dropdown1">
+                <a href="#">SCHOOL AND DEPARTMENT</a>
+                <a href="#">ACADEMIC CALENDAR(2021-2022)</a>
+                <a href="#">ACADEMIC CALENDAR(NEW BATCH)</a>
+                <a href="#">RESULTS</a>
+                <a href="#">FEE STRUCTURE</a>
+                
+            </div>
+        
+        </li>
+        <li class="dropdown"><a href="#">ADMISSION</a>
+            <div class="dropdown1">
+                <a href="#">CUET-2022(UG)</a>
+                <a href="#">CUET-2022(PG)</a>
+                <a href="#"></a>
+            </div>
+    
+        </li>
+        <li class="dropdown"><a href="#">FACILITIES</a>
+            <div class="dropdown1">
+                <a href="#">CENTRAL LIBRARY</a>
+                <a href="#">HOSTELS</a>
+                <a href="#">COMPUTER CENTRE</a>
+                <a href="#">GUEST HOUSE</a>
+
+            </div>
+
+        </li>
+        <li class="dropdown"><a href="#">RECRUITEMENT</a>
+            <div class="dropdown1">
+                <a href="#">RECRUITEMENT CELL</a>
+                <a href="#">RECRUITEMENT NOTIFICATION</a>
+
+
+            </div>
+        
+        </li>
+        <li class="dropdown"><a href="#">NOTIFICATION</a>
+            <div class="dropdown1">  
+                <a href="#">ANNUAL NOTICE</a>
+                <a href="#">ANNUAL REPORT</a>
+                <a href="#">ANNUAL ACCOUNTS</a>
+                <a href="#">ANNUA EVENTS</a>
+                <a href="#">GAZETTE NOTIFICATION</a>
+              
+            </div>    
+        </li>
+        <li><a href="#">CONTACT </a></li>        
+      
+        </ul>
+
+
+    </div>
+
+    <div class="container">
+        <div class="swiper">
+        <div class="swiper-wrapper">
+        
+        <div class="swiper-slide"><img src="https://media-exp2.licdn.com/dms/image/C4E1BAQE0CMrSPV0opA/company-background_10000/0/1554013718979?e=2147483647&v=beta&t=gUqEf-0jfnqCegiyg_etlHdYhelE68I_Z5jxIt-HMQo" style="height:70vh;width:100%;"></div>
+        <div class="swiper-slide"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Krishna_University_College_of_Engineering.jpg" style="height:70vh;width:100%;"></div>
+        <div class="swiper-slide"><img src="https://kru.ac.in/wp-content/uploads/2021/06/krumain-gate-min.jpeg" style="height:70vh;width:100%;"></div>
+        <div class="swiper-slide"><img src="https://pbs.twimg.com/media/EPiR2RJU0AITf46.jpg" style="height:70vh;width:100%;"></div>
+       
+   
+        </div>
+        <div class="swiper-pagination"></div>
+
+		
+		<div class="swiper-button-prev"></div>
+		<div class="swiper-button-next"></div> 
+
+    </div>
+   
+    </div>
+</div>
+</div>
+    <div class="updates1">
+    
+    <marquee>
+       
+        <img src="https://cuo.ac.in/bullets/new1.gif" style="height:11px;width: 26px;" alt="no image"><a href="#">UG IV Semester Supplementary Examinations Revaluation Notification||</a>
+        <img src="https://cuo.ac.in/bullets/new1.gif" style="height:11px;width: 26px;" alt="no image"><a href="#">Re revised Examination Centers of BED/SED/BPED/DPED-III semester examinations Sep-2022 ||</a>
+        <img src="https://cuo.ac.in/bullets/new1.gif" style="height:11px;width: 26px;" alt="no image"><a href="#">Advertisement for Engagement of Contractual Computer Instructor Under Tribal Digital Literacy Centre ||</a>
+        <img src="https://cuo.ac.in/bullets/new1.gif" style="height:11px;width: 26px;" alt="no image"><a href="#">Advertisement for Admission of Students into 03 Months Computer Basics Course Under Tribal Digital Literacy Centre </a>
+       
+    </marquee>
+   
+
+
+    </div>
+    <div class="box1">
+            <p class="chief">VISITOR</p>
+            <img src="https://pbs.twimg.com/profile_images/1189575201652015104/NlQ_UUlS_400x400.jpg" class="crop1">
+            <p class="names">Prof. K. Hemachandra Reddy</p>
+            <p style="color:#1a1a1a; text-align:center;">APSCHE CHAIRMAN</p>
+    </div>
+    <div class="box2">
+            <p class="chief">VICE-CHANCELOR</p>
+            <img src="https://kru.ac.in/wp-content/uploads/2021/01/Prof.KBCHome-Page-min.jpeg" class="crop1">
+            <p class="names">Prof. Dr. K.B.Chandrasekhar</p>
+            
+    </div>    
+    <div class="box3">
+            <p class="chief">REGISTAR</p>
+            <img src="https://kru.ac.in/wp-content/uploads/2021/09/ramireddyreg-236x300.png" class="crop1">
+            <p class="names">Dr. M. Rami Reddy</p>
+
+    
+    </div>   
+    <div class="updates2">
+            <p class="chief">NEWS & UPDATES</p>
+            <marquee direction="up" height="83%">
+            <img src="https://cuo.ac.in/bullets/new1.gif" class="upcontent1"><p><a href="#">UG IV Semester Supplementary Examinations Revaluation Notification </a></p>
+            <br>
+            
+            <img src="https://cuo.ac.in/bullets/new1.gif" class="upcontent1"><p><a href="#">Re revised Examination Centers of BED/SED/BPED/DPED-III semester examinations Sep-2022</a></p>
+            <br>
+            
+            <img src="https://cuo.ac.in/bullets/new1.gif" class="upcontent1"><p><a href="#">MPharmacy-II Semester RV Results</a></p>
+            <br>
+            
+            <img src="https://cuo.ac.in/bullets/new1.gif" class="upcontent1"><p><a href="#">PG-III semester Examinations Feb-Mar-2022 -Results</a></p>
+
+
+
+            </marquee>
+    </div>
+    <div class="middle">   
+    <div class="container1">
+           
+        <div class="swiper">
+        <p class="chief2">UPCOMING EVENTS</p> 
+        <div class="swiper-wrapper">
+        
+        
+        <div class="swiper-slide"><img src="https://kru.ac.in/wp-content/uploads/2021/08/pgstudies-07082021.jpeg" style="height:70vh;width:100%;"></div>
+        <div class="swiper-slide"><img src="https://kru.ac.in/wp-content/uploads/2020/07/WhatsApp-Image-2020-08-11-at-20.59.08-min.jpeg" style="height:70vh;width:100%;"></div>
+        <div class="swiper-slide"><img src="https://krupgc.ac.in/wp-content/uploads/2020/12/krupgcevent-2020-01-12.jpeg" style="height:70vh;width:100%;"></div>
+        
+       
+   
+        </div>
+        <div class="swiper-pagination"></div>
+
+		
+		<div class="swiper-button-prev"></div>
+		<div class="swiper-button-next"></div> 
+        
+
+    </div>
+   
+    </div>
+    
+    <div class="container2">
+        <div class="swiper">
+        <p class="chief2">ACTIVITIES & EVENTS</p>
+        <div class="swiper-wrapper">
+            
+        <div class="swiper-slide"><img src="https://www.collegebatch.com/static/clg-gallery/krishna-university-ku-machilipatnam-9676.jpg" style="height:280px; width:400px;">
+        <a href="#"  style="color:red;">KRISHNA UNIVERSITY KRISHNA THARANG-2022 EVENT CELEBRATIONS</a></div>
+        <div class="swiper-slide"><img src="https://krucet.ac.in/wp-content/uploads/2022/04/Placements-1.png" style="height:280px; width:400px;">
+        <a href="#"  style="color:red;">KRISHNA UNIVERSITY PLACEMENTS SUCCESS MEET-2022 EVENT CELEBRATIONS</a></div>
+        <div class="swiper-slide"><img src="https://i0.wp.com/www.thestartupjournal.com/wp-content/uploads/2015/11/Top-10-Colege-Fests-India.jpg" style="height:280px; width:400px;">
+        <a href="#"  style="color:red;">KRU VISTA-2K22 CELEBRATIONS</a></div>
+        <div class="swiper-slide"><img src="https://assets.telegraphindia.com/telegraph/27DhanHoli146C.jpg" style="height:280px; width:400px;">
+        <a href="#"  style="color:red;">KRU CELEBRATE HOLI-2K22 CELEBRATIONS</a></div>
+        <div class="swiper-slide"><img src="https://officechai.com/wp-content/uploads/2015/02/flashmob.jpg" style="height:280px; width:400px;">
+        <a href="#"  style="color:red;">KRISHNA UNIVERSITY WELCOME-2K22 CELEBRATIONS</a></div>
+            
+        </div>
+        <div class="swiper-pagination"></div>
+
+		
+		<div class="swiper-button-prev"></div>
+	    <div class="swiper-button-next"></div> 
+
+
+
+
+
+    </div>
+    </div>
+
+    <div class="container3">
+        <div class="swiper">
+            <p class="chief2">KRU IN NEWS</p>
+            <div class="swiper-wrapper">
+                
+            <div class="swiper-slide"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMcFXGclBFSmqUsG4k59QI4dA_1jR7Hdeuyw&usqp=CAU" style="height:280px; width:400px;"></div>
+            <div class="swiper-slide"><img src="https://i.ytimg.com/vi/yr3wG_Oo3Yc/maxresdefault.jpg" style="height:280px; width:400px;"></div>
+            <div class="swiper-slide"><img src="https://images.news18.com/ibnlive/uploads/2017/12/Krishna-univ.jpg?im=Resize,width=360,aspect=fit,type=normal?im=Resize,width=320,aspect=fit,type=normal" style="height:280px; width:400px;"></div>
+            <div class="swiper-slide"><img src="https://www.mecbsegov.in/wp-content/uploads/2021/04/KRISHNA-UNIVERSIY.png" style="height:280px; width:400px;"></div>
+            
+                
+            </div>
+            <div class="swiper-pagination"></div>
+    
+            
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div> 
+    
+    
+    
+    
+    
+        </div>
+        </div>
+    <div class="container4">
+        <div class="twitter">
+            <p class="chief3">GET CONNECTED WITH US</p>
+        <div class="twitter1">
+                <a class="twitter-timeline" href="https://twitter.com/Uniofkrishna?ref_src=twsrc%5Etfw">Tweets by Uniofkrishna</a> 
+                 <div class="twitterbox">
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="container5">
+        <div class="buttons1">
+            <p class="chief3">QUICK LINKS</p>
+            <div class="buttons">
+                <button type="button"class="buttons2"><a href="#">YOGA 2022</a></button>
+                <button type="button"class="buttons2"><a href="#">CORONA VIRUS AWARENESS</a></button>
+                <button type="button"class="buttons2"><a href="#">YSR BHAROSA</a></button>
+                <button type="button"class="buttons2"><a href="#">NCC CADETS</a></button>
+                <button type="button"class="buttons2"><a href="#">OFFICE/BOARD CIRCULARS</a></button>
+                <button type="button"class="buttons2"><a href="#">ISO DATA</a></button>
+                <button type="button"class="buttons2"><a href="#">COMMITTIES</a></button>
+                <button type="button"class="buttons2"><a href="#">AGGRICULTURAL ACTIVITIES</a></button>
+                <button type="button"class="buttons2"><a href="#">MOOCS</a></button>
+                <button type="button"class="buttons2"><a href="#">FEEDBACK</a></button>
+                <button type="button"class="buttons2"><a href="#">EK BHARAT SHRESHTA BHARAT</a></button>
+                <button type="button"class="buttons2"><a href="#">PHOTO GALLERY</a></button>
+            </div>
+       
+            </div>
+        </div>
+
+
+    </div>
+    <div class="container6"> 
+        <div class="address">  
+        <h1 class="add">ADDRESS:-</h1>
+        
+        <p class="det"><br>Krishna University (KrU)<br><br>
+
+        Rudravaram, Machilipatnam-521004<br><br>
+            
+        Krishna District, Andhra Pradesh, India</P><br><br>
+        <h2 class="add">CONTACT:-</h2>
+        <br>
+        <br>
+        <p class="det">MOBILE NO:-08672-259215<br><br>  
+        EMAIL US-KRISHNAUNIVERSITY@GMAIL.COM</P>
+    </div>
+        <div class="map">
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d61317.77796371419!2d81.0891698!3d16.1503171!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a49dd4fb63b8e93%3A0xbf35e0f0e7b1b6eb!2sKrishna%20University!5e0!3m2!1sen!2sin!4v1662441164815!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map1"></iframe>
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+ 
+
+
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {	
+         autoplay:{
+         delay:2000,
+         disableoninteraction: false,
+         },
+        loop: true,
+        
+        pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        },
+        
+        navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+        },
+        
+        });
+    </script> 
+
+</body>
+	
+
+</html>
